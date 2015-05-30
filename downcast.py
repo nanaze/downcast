@@ -7,7 +7,7 @@ downcast.py http://feeds.thisamericanlife.org/talpodcast
 This can be used in conjunction with xargs/wget to download podcasts.
 
 Example:
-downcast.py <url> | xargs wget 
+downcast.py <url> | xargs wget
 """
 
 import sys
@@ -17,7 +17,7 @@ import xml.sax
 
 
 def main():
-  if len(sys.argv):
+  if len(sys.argv) != 2:
     sys.exit(__doc__)
 
   url = sys.argv[1]
